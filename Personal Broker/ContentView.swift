@@ -7,6 +7,9 @@ struct ContentView: View {
             BookmakerResultCell()
         }
         .listStyle(.plain)
+        .listRowSpacing(20)
+        .listRowSeparator(.hidden)
+        
     }
 }
 

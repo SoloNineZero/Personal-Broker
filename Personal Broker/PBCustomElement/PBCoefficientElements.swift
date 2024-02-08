@@ -16,8 +16,8 @@ struct PBCoefficientElements: View {
         HStack {
             PBColorScale(filledPercent: .constant(percentageOfMaxValue), color: color)
             Text(title)
-                .frame(width: 70, alignment: .leading)
-                .foregroundColor(.gray)
+                .frame(width: 65, alignment: .leading)
+                .foregroundColor(.PBGray)
                 .font(.system(size: 12))
             Text("\(value, specifier: "%.2f")")
                 .frame(width: 55)
@@ -28,6 +28,6 @@ struct PBCoefficientElements: View {
 struct CoefficientElement_Previews: PreviewProvider {
     
     static var previews: some View {
-        PBCoefficientElements(value: .constant(1.0), title: "Выигрыш", color: .red, maxValue: 3.0)
+        PBCoefficientElements(value: .constant(1.0), title: "Выигрыш", color: .PBRed, maxValue: 3.0)
     }
 }

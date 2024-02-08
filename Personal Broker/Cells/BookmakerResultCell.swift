@@ -25,7 +25,6 @@ struct BookmakerResultCell: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Выигрыш/проигрыш по букмекерам")
-                .padding(.top, 20)
             HStack{
                 Image("williamhill", bundle: .none)
                     .resizable()
@@ -41,8 +40,13 @@ struct BookmakerResultCell: View {
                 lossText: "\(lossValue) (\(Int(round(lossPrecent * 100)))%)",
                 returnText: "\(returnValue) (\(Int(round(returnPrecent * 100)))%)"
             )
-            
+            .padding(.bottom, 10)
         }
+        .padding(10)
+        .overlay(
+            Rectangle()
+                .stroke(.black, lineWidth: 0.5)
+        )
     }
 }
 

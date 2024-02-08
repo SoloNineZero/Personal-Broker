@@ -10,7 +10,7 @@ struct PBWinLossColorScale: View {
     let lossText: String
     let returnText: String
     
-    let spacing: CGFloat = 5
+    let spacing: CGFloat = 10
     
     var body: some View {
         GeometryReader { geometry in
@@ -18,34 +18,36 @@ struct PBWinLossColorScale: View {
                 Rectangle()
                     .fill(.clear)
                 HStack(spacing: 5) {
+                    // вынести в отдельный элемент
+                    
                     VStack(alignment: .leading){
                         Rectangle()
-                            .fill(.green)
+                            .fill(.pbGreen)
                             .frame(width: (geometry.size.width - spacing) * CGFloat(winPercent))
                             .frame(height: 10)
                         Text(winText)
-                            .font(.system(size: 15))
+                            .font(.system(size: 13))
                         
                     }
                     VStack(alignment: .leading){
                         Rectangle()
-                            .fill(.red)
+                            .fill(.pbRed)
                             .frame(width: (geometry.size.width - spacing) * CGFloat(lossPercent))
                             .frame(height: 10)
                         Text(lossText)
-                            .font(.system(size: 15))
+                            .font(.system(size: 13))
                     }
                     VStack(alignment: .trailing){
                         Rectangle()
-                            .fill(.gray)
+                            .fill(.pbGray)
                             .frame(width: (geometry.size.width - spacing) * CGFloat(returnPrecent))
                             .frame(height: 10)
                         Text(returnText)
-                            .font(.system(size: 15))
+                            .font(.system(size: 13))
                     }
                 }
             }
-            .frame(height: 50)
+//            .frame(height: 50)
         }
     }
 }

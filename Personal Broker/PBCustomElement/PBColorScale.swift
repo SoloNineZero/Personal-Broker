@@ -9,7 +9,7 @@ struct PBColorScale: View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 Rectangle()
-                    .fill(.gray.opacity(0.2))
+                    .fill(.pbLightGray.opacity(0.2))
                 
                 Rectangle()
                     .fill(color)
@@ -22,6 +22,6 @@ struct PBColorScale: View {
 
 struct PBColorScale_Previews: PreviewProvider {
     static var previews: some View {
-        PBColorScale(filledPercent: .constant(0.2), color: .blue)
+        PBColorScale(filledPercent: .constant(0.2), color: .PBRed)
     }
 }
