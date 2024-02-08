@@ -18,8 +18,6 @@ struct PBWinLossColorScale: View {
                 Rectangle()
                     .fill(.clear)
                 HStack(spacing: 5) {
-                    // вынести в отдельный элемент
-                    
                     VStack(alignment: .leading){
                         Rectangle()
                             .fill(.pbGreen)
@@ -27,7 +25,6 @@ struct PBWinLossColorScale: View {
                             .frame(height: 10)
                         Text(winText)
                             .font(.system(size: 13))
-                        
                     }
                     VStack(alignment: .leading){
                         Rectangle()
@@ -47,7 +44,6 @@ struct PBWinLossColorScale: View {
                     }
                 }
             }
-//            .frame(height: 50)
         }
     }
 }

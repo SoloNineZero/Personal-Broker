@@ -10,7 +10,6 @@ struct PBColorScale: View {
             ZStack(alignment: .leading) {
                 Rectangle()
                     .fill(.pbLightGray.opacity(0.2))
-                
                 Rectangle()
                     .fill(color)
                     .frame(width: geometry.size.width * CGFloat(filledPercent))

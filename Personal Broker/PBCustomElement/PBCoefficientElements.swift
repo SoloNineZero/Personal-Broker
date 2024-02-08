@@ -14,13 +14,16 @@ struct PBCoefficientElements: View {
     
     var body: some View {
         HStack {
-            PBColorScale(filledPercent: .constant(percentageOfMaxValue), color: color)
+            PBColorScale(
+                filledPercent: .constant(percentageOfMaxValue),
+                color: color)
             Text(title)
                 .frame(width: 65, alignment: .leading)
                 .foregroundColor(.PBGray)
                 .font(.system(size: 12))
             Text("\(value, specifier: "%.2f")")
                 .frame(width: 55)
+                .font(.system(size: 13))
         }
     }
 }

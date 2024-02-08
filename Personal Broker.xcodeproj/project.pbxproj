@@ -11,8 +11,8 @@
 		A86F02042B73F85E001F0A39 /* PBCoefficientElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F02032B73F85E001F0A39 /* PBCoefficientElements.swift */; };
 		A86F02082B749450001F0A39 /* PBColorScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F02072B749450001F0A39 /* PBColorScale.swift */; };
 		A86F020A2B74B807001F0A39 /* BookmakerResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F02092B74B807001F0A39 /* BookmakerResultCell.swift */; };
-		A86F020C2B74BDD7001F0A39 /* PBWinLossColorScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F020B2B74BDD7001F0A39 /* PBWinLossColorScale.swift */; };
-		A86F02102B74EF1C001F0A39 /* Color+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F020F2B74EF1C001F0A39 /* Color+ Extension.swift */; };
+		A86F02102B74EF1C001F0A39 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F020F2B74EF1C001F0A39 /* Color+Extension.swift */; };
+		A86F02172B753F29001F0A39 /* PBWinLossColorScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F02162B753F29001F0A39 /* PBWinLossColorScale.swift */; };
 		A8B136802B73DE5C00ADD81B /* Personal_BrokerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1367F2B73DE5C00ADD81B /* Personal_BrokerApp.swift */; };
 		A8B136822B73DE5C00ADD81B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B136812B73DE5C00ADD81B /* ContentView.swift */; };
 		A8B136842B73DE6200ADD81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B136832B73DE6200ADD81B /* Assets.xcassets */; };
@@ -24,8 +24,8 @@
 		A86F02032B73F85E001F0A39 /* PBCoefficientElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBCoefficientElements.swift; sourceTree = "<group>"; };
 		A86F02072B749450001F0A39 /* PBColorScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBColorScale.swift; sourceTree = "<group>"; };
 		A86F02092B74B807001F0A39 /* BookmakerResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmakerResultCell.swift; sourceTree = "<group>"; };
-		A86F020B2B74BDD7001F0A39 /* PBWinLossColorScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBWinLossColorScale.swift; sourceTree = "<group>"; };
-		A86F020F2B74EF1C001F0A39 /* Color+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ Extension.swift"; sourceTree = "<group>"; };
+		A86F020F2B74EF1C001F0A39 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		A86F02162B753F29001F0A39 /* PBWinLossColorScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBWinLossColorScale.swift; sourceTree = "<group>"; };
 		A8B1367C2B73DE5C00ADD81B /* Personal Broker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Broker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B1367F2B73DE5C00ADD81B /* Personal_BrokerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_BrokerApp.swift; sourceTree = "<group>"; };
 		A8B136812B73DE5C00ADD81B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,9 +56,9 @@
 		A86F020E2B74DE89001F0A39 /* PBCustomElement */ = {
 			isa = PBXGroup;
 			children = (
-				A86F02032B73F85E001F0A39 /* PBCoefficientElements.swift */,
 				A86F02072B749450001F0A39 /* PBColorScale.swift */,
-				A86F020B2B74BDD7001F0A39 /* PBWinLossColorScale.swift */,
+				A86F02032B73F85E001F0A39 /* PBCoefficientElements.swift */,
+				A86F02162B753F29001F0A39 /* PBWinLossColorScale.swift */,
 			);
 			path = PBCustomElement;
 			sourceTree = "<group>";
@@ -66,7 +66,7 @@
 		A86F02112B74F035001F0A39 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A86F020F2B74EF1C001F0A39 /* Color+ Extension.swift */,
+				A86F020F2B74EF1C001F0A39 /* Color+Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -179,9 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A86F020C2B74BDD7001F0A39 /* PBWinLossColorScale.swift in Sources */,
-				A86F02102B74EF1C001F0A39 /* Color+ Extension.swift in Sources */,
+				A86F02102B74EF1C001F0A39 /* Color+Extension.swift in Sources */,
 				A86F020A2B74B807001F0A39 /* BookmakerResultCell.swift in Sources */,
+				A86F02172B753F29001F0A39 /* PBWinLossColorScale.swift in Sources */,
 				A8B136822B73DE5C00ADD81B /* ContentView.swift in Sources */,
 				A86F02022B73F55A001F0A39 /* CoefficientCell.swift in Sources */,
 				A8B136802B73DE5C00ADD81B /* Personal_BrokerApp.swift in Sources */,
