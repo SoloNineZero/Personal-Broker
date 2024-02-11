@@ -10,21 +10,21 @@ struct PBWinLossColorScale: View {
     let lossText: String
     let returnText: String
     
-    let spacing: CGFloat = 10
+    let spacing: CGFloat = 20
     
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 Rectangle()
                     .fill(.clear)
-                HStack(spacing: 5) {
+                HStack(spacing: spacing / 2) {
                     VStack(alignment: .leading){
                         Rectangle()
                             .fill(.pbGreen)
                             .frame(width: (geometry.size.width - spacing) * CGFloat(winPercent))
                             .frame(height: 10)
                         Text(winText)
-                            .font(.system(size: 13))
+                            .font(.system(size: 12))
                     }
                     VStack(alignment: .leading){
                         Rectangle()
@@ -32,7 +32,7 @@ struct PBWinLossColorScale: View {
                             .frame(width: (geometry.size.width - spacing) * CGFloat(lossPercent))
                             .frame(height: 10)
                         Text(lossText)
-                            .font(.system(size: 13))
+                            .font(.system(size: 12))
                     }
                     VStack(alignment: .trailing){
                         Rectangle()
@@ -40,7 +40,7 @@ struct PBWinLossColorScale: View {
                             .frame(width: (geometry.size.width - spacing) * CGFloat(returnPrecent))
                             .frame(height: 10)
                         Text(returnText)
-                            .font(.system(size: 13))
+                            .font(.system(size: 12))
                     }
                 }
             }

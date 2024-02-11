@@ -33,6 +33,7 @@ struct CoefficientCell: View {
             )
         }
         .padding(10)
+//        .frame(height: 150)
         .overlay(
             Rectangle()
                 .stroke(.black, lineWidth: 0.5)

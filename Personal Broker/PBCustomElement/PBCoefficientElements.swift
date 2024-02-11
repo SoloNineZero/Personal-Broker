@@ -8,8 +8,8 @@ struct PBCoefficientElements: View {
     let maxValue: Double
     
     var percentageOfMaxValue: Double {
-        let currentValue = min(value, maxValue)
-        return (currentValue / maxValue)
+        let currentValue = max(0.02, min(1.0, value / maxValue))
+        return currentValue
     }
     
     var body: some View {
@@ -23,7 +23,7 @@ struct PBCoefficientElements: View {
                 .font(.system(size: 12))
             Text("\(value, specifier: "%.2f")")
                 .frame(width: 55)
-                .font(.system(size: 13))
+                .font(.system(size: 12))
         }
     }
 }
@@ -31,6 +31,6 @@ struct PBCoefficientElements: View {
 struct CoefficientElement_Previews: PreviewProvider {
     
     static var previews: some View {
-        PBCoefficientElements(value: .constant(1.0), title: "Выигрыш", color: .PBRed, maxValue: 3.0)
+        PBCoefficientElements(value: .constant(0.005), title: "Выигрыш", color: .PBRed, maxValue: 3.0)
     }
 }

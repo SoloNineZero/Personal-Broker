@@ -28,7 +28,7 @@ struct BookmakerResultCell: View {
             HStack{
                 Image("williamhill", bundle: .none)
                     .resizable()
-                    .frame(width: 100, height: 55)
+                    .frame(width: 85, height: 45)
                 Text("\(Int(totalValue)) ставки")
                     .padding(.leading, 20)
             }
@@ -40,9 +40,11 @@ struct BookmakerResultCell: View {
                 lossText: "\(lossValue) (\(Int(round(lossPrecent * 100)))%)",
                 returnText: "\(returnValue) (\(Int(round(returnPrecent * 100)))%)"
             )
-            .padding(.bottom, 10)
+            .frame(height: 30)
+//            .padding(.bottom, 10)
         }
         .padding(10)
+//        .frame(height: 150)
         .overlay(
             Rectangle()
                 .stroke(.black, lineWidth: 0.5)
