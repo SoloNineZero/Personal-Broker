@@ -22,7 +22,7 @@ struct PBCoefficientElements: View {
                 .foregroundColor(.PBGray)
                 .font(.system(size: 12))
             Text("\(value, specifier: "%.2f")")
-                .frame(width: 55)
+                .frame(width: 35, alignment: .trailing)
                 .font(.system(size: 12))
         }
     }
