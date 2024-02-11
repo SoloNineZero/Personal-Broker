@@ -41,14 +41,14 @@ struct BookmakerResultCell: View {
                 returnText: "\(returnValue) (\(Int(round(returnPrecent * 100)))%)"
             )
             .frame(height: 30)
-//            .padding(.bottom, 10)
         }
         .padding(10)
-//        .frame(height: 150)
+        .frame(height: 140)
         .overlay(
             Rectangle()
                 .stroke(.black, lineWidth: 0.5)
         )
+        Spacer()
     }
 }
 
