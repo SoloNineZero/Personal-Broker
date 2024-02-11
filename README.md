@@ -10,4 +10,4 @@
 
 Итоговаый результат:  
 
-<img width="300" src="https://github.com/SoloNineZero/Personal-Broker/assets/121757460/c7701a45-924a-4cd5-ad30-aae69bc1b66b">
+<img width="300" src="https://github.com/SoloNineZero/Personal-Broker/assets/121757460/412b67e4-fe95-407c-8f8d-b0b940eff289">
